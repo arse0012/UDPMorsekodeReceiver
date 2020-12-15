@@ -33,12 +33,13 @@ namespace UDPMorsekodeReceiver
                     Console.WriteLine("Receives {0} bytes from {1} port {2}", datagramReceived.Length,
                         remoteEndPoint.Address, remoteEndPoint.Port);
                     Console.WriteLine("Translation {0}", translate);
-
-
                     postWorker.Post(translate);
+
+                    
 
                 }
             }
+            
         }
     }
 }
